@@ -46,17 +46,16 @@ string toBinary(int numb) {
     int temp1;
     string temp2;
     for (int i = 0; i < 9; i++) {
-        temp1 = numb % 2;
+        temp = numb % 2;
         numb /= 2;
-        if (temp1 == 0) {
+        /*if (temp1 == 0) {
             temp2 = "0";
         }
         else {
             temp2 = "1";
-        }
+        }*/
         //temp2 << temp1;
-        binary =  temp2 + binary;
-
+        binary =  to_string(temp) + binary;
     }
     //cout << binary;
     return binary;
